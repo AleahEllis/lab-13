@@ -16,18 +16,34 @@
 	
 			<div ng-controller="theController as vm">
 
-				<button ng-click="vm.randomW()">Words</button>
-				<p id='display1'>{{}}</p>
+				
+				<button ng-click="vm.pickWord()">Words!</button>
+				 <div ng-repeat="theWord in vm.inArray"> 
+    				<span>{{theWord.word}}</span>
+    			</div> 
+
 				
 				
-				<button ng-click="vm.">More Words!</button>
+				 <button ng-click="vm.wordDecor()">Words with Decoration</button> 
+				 <div class="ng-class : {{element.worDeco}}" ng-repeat="element in vm.styledArray"> 
+    				<span>{{element.word}}</span>
+    			</div> 
+
+
 				
 				
-				<button ng-click="vm.randomP()">Words with Decoration</button>
-				<p id='display2'>{{}}</p>
+				<button ng-click="vm.pickPhrase()">More Words!</button>
+				 <div ng-repeat="thePhrase in vm.phraseArray"> 
+    				<span>{{thePhrase.phrase}}</span>
+    			</div> 
+
 				
 				
-				<button ng-click="vm.">More words with Decoration</button> 
+				 <button ng-click="vm.phraseDecor()">More Words with Decoration</button> 
+				 <div class="ng-class : {{phraseElement.phraseDeco}}" ng-repeat="phraseElement in vm.styledPhraseArray"> 
+    				<span>{{phraseElement.phrase}}</span>
+    			</div> 
+
 
 				
 
