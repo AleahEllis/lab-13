@@ -12,7 +12,7 @@ app.controller('theController', function(){
      	vm.inArray.push(theWord);
     };
 
-    vm.worDeco = ['bold'];
+    vm.worDeco = ['bold','strike','red','ugly','orange'];
 	vm.styledArray=[];
     vm.wordDecor = function () {
       var element = {};
@@ -33,7 +33,7 @@ app.controller('theController', function(){
     };
 
 
-    vm.phraseDeco = ['bold'];
+    vm.phraseDeco = ['bold','strike','red','ugly','orange'];
 	vm.styledPhraseArray=[]
 
     vm.phraseDecor = function () {
